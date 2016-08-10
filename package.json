@@ -4,7 +4,7 @@
   "description": "Client app for the Full-Stack Redux Tutorial http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require .test/test_helpers.js \"test/**/*@(.js|.jsx)\"",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
     "test:watch": "npm run test -- --watch"
   },
   "repository": {
@@ -36,6 +36,7 @@
   "dependencies": {
     "immutable": "3.8.1",
     "react": "15.3.0",
+    "react-addons-test-utils": "15.3.0",
     "react-dom": "15.3.0"
   }
 }

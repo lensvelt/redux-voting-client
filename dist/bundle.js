@@ -585,7 +585,7 @@
 
 	__webpack_require__(1);
 	__webpack_require__(74);
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/index.jsx\""); }());
+	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/index.js\""); }());
 
 
 /***/ },
