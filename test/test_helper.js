@@ -1,5 +1,7 @@
 //Set up code to use 'jsdom' (enables testing DOM virtually rather than in browser using, say, Karma)
 import jsdom from 'jsdom';
+import chai from 'chai';
+import chaiImmutable from 'chai-immutable';
 
 //Create jsdom versions of the document & window objects & put them on the global object
 const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
@@ -19,3 +21,6 @@ Object.keys(window).forEach((key) => {
     global[key] = window[key];
   }
 });
+
+//Enable use of chai-immutable in tests
+chai.use(chaiImmutable);
